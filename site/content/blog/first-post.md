@@ -1,7 +1,8 @@
 ---
 title: First Post
 date: '2019-06-05T17:42:38.000+00:00'
-post_categories: []
+post_categories:
+- Growin
 post_tags: []
 post_publish_date: 2019-06-04T07:00:00+00:00
 post_featured_image: "/uploads/dk-hero.jpg"
