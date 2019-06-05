@@ -1,4 +1,47 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: post_title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: post_slug
+  type: text
+  config:
+    required: false
+  label: Slug
+  description: Use this to customize the post url
+- name: post_publish_date
+  type: datetime
+  label: Publish Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: post_short_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Short Description
+  description: For SEO
+- name: post_categories
+  type: tag_list
+  default: []
+  label: Categories
+- name: post_tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: post_featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
