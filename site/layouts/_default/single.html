@@ -1,5 +1,13 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <article class="content">
-  <main>{{- .Content -}}</main>
+  
+  <main>
+    <div class="hero">
+      <img src="{{ .Params.post_featured_image }}" alt="alt">
+    </div>
+    <p>Published on: {{ dateFormat "Jan 2, 2006" .Params.post_publish_date }}</p>
+    {{- .Content -}}
+  
+  </main>
 </article>
 {{ end }}
