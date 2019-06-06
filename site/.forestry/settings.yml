@@ -14,6 +14,14 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: directory
+  path: site/data/author
+  label: Authors
+  create: documents
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - author
 upload_dir: site/static/uploads
 public_path: "/uploads"
 front_matter_path: ''

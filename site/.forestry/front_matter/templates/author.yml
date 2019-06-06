@@ -1,0 +1,25 @@
+---
+label: Author
+hide_body: true
+fields:
+- name: author_name
+  type: text
+  config:
+    required: true
+  label: Author Name
+- name: author_description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Author Description
+- name: author_avatar
+  type: file
+  config:
+    maxSize: '1'
+  label: Author Avatar
+pages:
+- site/data/author/drewkramer.json
