@@ -4,12 +4,18 @@
 
 {{- .Content -}}
 
-{{ range .Pages.ByPublishDate }}
+<h2>Latest Entries</h2>
+<p>Lancaster Hemp is an organic hemp farm located in Lancaster, PA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+{{ range (where .Site.RegularPages.ByWeight "Section" "blog" ) }}
     <div>
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     </div>
 {{ end }}
+<p>
+    <a href="{{ "/blog" | relURL }}">View All Entries ></a>
+</p>
 
 <!-- <a href="{{ "/tech" | relURL }}">Check out the tech</a> -->
 
