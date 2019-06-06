@@ -16,6 +16,9 @@ sections:
   match: "*"
 - type: heading
   label: Data
+- type: document
+  label: Authors
+  path: site/data/authors.yml
 upload_dir: site/static/uploads
 public_path: "/uploads"
 front_matter_path: ''
