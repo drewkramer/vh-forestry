@@ -45,6 +45,16 @@ fields:
   config:
     maxSize: 250
   label: Featured Image
+- name: author
+  type: select
+  label: Author
+  description: Select the page's author
+  hidden: false
+  config:
+      source:
+        type: datafiles
+        file: authors-yaml
+        path: site/data/authors.yml
 pages:
 - site/content/blog/first-post.md
 - site/content/_index.md
