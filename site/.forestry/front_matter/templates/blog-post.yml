@@ -47,3 +47,4 @@ fields:
   label: Featured Image
 pages:
 - site/content/blog/first-post.md
+- site/content/_index.md
