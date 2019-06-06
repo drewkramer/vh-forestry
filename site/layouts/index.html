@@ -1,9 +1,16 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<h1>{{- .Params.post_title -}}</h1>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+{{- .Content -}}
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+{{ range .Pages.ByPublishDate }}
+    <div>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+    </div>
+{{ end }}
+
+<!-- <a href="{{ "/tech" | relURL }}">Check out the tech</a> -->
 
 {{ end }}
