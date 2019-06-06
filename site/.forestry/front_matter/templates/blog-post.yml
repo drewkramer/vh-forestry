@@ -51,10 +51,12 @@ fields:
   description: Select the page's author
   hidden: false
   config:
-      source:
-        type: datafiles
-        file: authors-yml
-        path: site/data/authors.yml
+    source:
+      type: simple
+      file: authors-yml
+      path: ''
+      section: ''
+  default: ''
 pages:
 - site/content/blog/first-post.md
 - site/content/_index.md
