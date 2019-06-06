@@ -52,8 +52,8 @@ fields:
   hidden: false
   config:
     source:
-      type: simple
-      file: authors-yml
+      type: datafiles
+      file: authors.yml
       path: ''
       section: ''
     options: []
