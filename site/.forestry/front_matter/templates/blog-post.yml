@@ -53,7 +53,7 @@ fields:
   config:
       source:
         type: datafiles
-        file: authors-yaml
+        file: authors
         path: site/data/authors.yml
 pages:
 - site/content/blog/first-post.md
