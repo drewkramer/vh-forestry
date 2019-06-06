@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="list">
+  
+  <main>
+    <h1>{{- .Page.Title -}}</h1>
+    {{ range (where .Site.RegularPages.ByWeight "Section" "blog" ) }}
+    <div>
+        <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    </div>
+    {{ end }}
+  </main>
+</article>
+{{ end }}
