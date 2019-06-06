@@ -9,6 +9,7 @@ post_featured_image: "/uploads/dk-hero.jpg"
 post_title: First Post with FM
 post_short_description: A Description
 post_slug: ''
+author: Drew Kramer
 
 ---
 ## Hemp is good for a lot of things.

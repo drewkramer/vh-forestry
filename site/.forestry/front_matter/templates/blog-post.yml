@@ -60,5 +60,5 @@ fields:
     - Drew Kramer
   default: ''
 pages:
-- site/content/blog/first-post.md
 - site/content/_index.md
+- site/content/blog/first-post.md
