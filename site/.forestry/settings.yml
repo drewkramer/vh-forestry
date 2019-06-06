@@ -14,6 +14,8 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: heading
+  label: Data
 - type: directory
   path: site/data/author
   label: Authors
