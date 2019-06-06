@@ -56,8 +56,7 @@ fields:
       file: authors-yml
       path: ''
       section: ''
-    options:
-    - Drew Kramer
+    options: []
   default: ''
 pages:
 - site/content/_index.md
