@@ -21,5 +21,3 @@ fields:
   config:
     maxSize: '1'
   label: Author Avatar
-pages:
-- site/data/author/drewkramer.json
