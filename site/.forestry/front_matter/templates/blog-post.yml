@@ -60,4 +60,3 @@ fields:
   default: ''
 pages:
 - site/content/_index.md
-- site/content/blog/first-post.md
